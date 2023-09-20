@@ -36,7 +36,7 @@
             class="hero-img"/>
         
         <ul class="navegacion">
-            <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+            <li><a href="#about" class="nav-link">Acerca de Mí</a></li>
             <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
             <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
             <li><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -55,7 +55,7 @@
             loading="lazy"
             class="hero-img"
         /> -->
-        <div class="bio ">
+        <div class="bio animate__animated animate__shakeX">
             <h2 class="bio-titulo">Sobre Mí</h2>
             <p class="bio-texto">
                 Soy ingeniero informático de profesión, entusiasta en el aprendizaje de desarrollo de aplicaciones web con HTML, CSS, JS. Actualmente especializandome en Salesforce Admin & Developer, con tecnologías como LWC, Apex, Java, Administración desde el inicio de un proyecto en Salesforce.
@@ -76,17 +76,173 @@
     <!-- Sobre Mí -->
 
     <!-- Sección Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="header-habilidades">Mis mejores habilidades</h2>
+        <div class="contenedor-habilidades">
+            <div class="first-set animate_animated animate_pulse">
+                <img 
+                    src="assets/icons/icons8-html-5.svg" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+                <img 
+                    src="assets/icons/icons8-css3.svg" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+                <img 
+                    src="assets/icons/icons8-javascript.svg" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+            </div>
+            <div class="second-set animate_animated animate_pulse">
+                <img 
+                    src="assets/icons/Salesforce-logo.png" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+                <img 
+                    src="assets/icons/trailhead-logo.png" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+                <img 
+                    src="assets/icons/icons8-git.svg" 
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+                />
+            </div>
+        </div>
+    </section>
 
     <!-- Sección Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="titulo-proyectos">Algunos de mis proyectos recientes</h2>
+        <div class="contenedor-de-proyectos">          
+            <div class="contenedor-de-proyectos tarjeta-de-proyectos">
+                <img
+                  src="assets/images/WeatherAPP.png"
+                  alt="WeatherAPP"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="titulo-proyecto">Aplicación Weather/Map</h3>
+                <p class="detalles-proyecto">
+                    Aplicación para ver como esta el clima en algunas ciudades en América.
+                    También señala en el mapa de google la ubicación de la ciudad buscada con anterioridad.
+                    Se desarollo en: HTML, CSS, JS, con API's de: Openweatherorg y Google Maps.
+                </p>                
+                <a href="https://github.com/SolidEiEn/aore">Perfil GitHub</a>
+            </div>   
+            <div class="contenedor-de-proyectos tarjeta-de-proyectos">
+                <img
+                  src="assets/images/trailheadSalesforce.png"
+                  alt="Trailhead Salesforce"
+                  loading="lazy"
+                  class="project-pic"
+                />
+                <h3 class="titulo-proyecto">Trailhead Salesforce</h3>
+                <p class="detalles-proyecto">
+                    Con mas de 61 mil puntos y 56 insignias que incluyen 03 superbadges en Trailhead de Salesforce 
+                    , les invito a revisar mi <a href="https://www.salesforce.com/trailblazer/aore" target="_blank">Perfil de Trailhead</a>.
+                </p>                
+            </div>            
+        </div>
+    </section>
 
     <!-- Sección Contacto-->
-
+    <section class="contacto" id="contacto">
+        <h2>Contáctame</h2>
+        <div class="formulario-contacto-contenedor">
+            <div class="formulario-contacto">
+                <form action="https://formspree.io/f/xyyqnpkq" method="POST"></form>
+                <div class="control-formulario">
+                    <label for="name">Nombre</label>
+                    <input 
+                        type="text" 
+                        name="sender-name" 
+                        id="name"
+                        placeholder="Escribe tu nombre"
+                        class="input-field"
+                        required
+                    />
+                </div>
+                <div class="control-formulario">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        name="sender-email" 
+                        id="email"
+                        placeholder="Ingrese su email"
+                        class="input-field"
+                        required
+                    />
+                </div>
+                <div class="control-formulario">
+                    <label for="mensaje">Déjame un mensaje</label>
+                    <textarea 
+                        name="mensaje" 
+                        id="mensaje" 
+                        cols="60" 
+                        rows="10"
+                        placeholder="Escriba su mensaje"
+                        class="input-field"
+                        required>
+                    </textarea>
+                </div>
+                <input 
+                    type="submit"
+                    value="Enviar"
+                    id="submit-btn"
+                    class="submit-btn">
+            </div>
+        </div>
+    </section>
     <!-- Sección de redes sociales - Fijado a la derecha -->
-
+    <div class="sociales">
+        <a href="https://www.linkedin.com/in/antonio-ore-leon" target="_blank">
+            <img 
+                src="assets/icons/icons8-linkedin-circled.gif" 
+                alt="LinkedIn"
+                loading="lazy"
+                class="socicon">
+        </a>
+        <a href="https://github.com/SolidEiEn/aore" target="_blank">
+            <img 
+                src="assets/icons/icons8-github.gif" 
+                alt="LinkedIn"
+                loading="lazy"
+                class="socicon">
+        </a>        
+    </div>
     <!-- Vuelve al comienzo  -->
-
+    <i class="up" id="up">
+        <img 
+            src="assets/icons/icons8-upward-arrow.gif" 
+            alt="up-arrow"
+            class="socicon up-arrow">
+    </i>
     <!-- Sección Footer  -->
-
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+            Desarrollado por Antonio Oré | Developer
+            <a href="https://www.linkedin.com/in/antonio-ore-leon" target="_blank">
+                <img 
+                src="assets/icons/icons8-linkedin-circled.gif" 
+                alt="LinkedIn"
+                loading="lazy"
+                class="sociconfooter">
+            </a>
+        </p>
+    </footer>
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
 

@@ -162,47 +162,49 @@
         <h2>Contáctame</h2>
         <div class="formulario-contacto-contenedor">
             <div class="formulario-contacto">
-                <form action="https://formspree.io/f/xyyqnpkq" method="POST"></form>
-                <div class="control-formulario">
-                    <label for="name">Nombre</label>
+                <form action="https://formspree.io/f/xyyqnpkq" method="POST">
+                    <div class="control-formulario">
+                        <label for="name">Nombre</label>
+                        <input 
+                            type="text" 
+                            name="sender-name" 
+                            id="name"
+                            placeholder="Escribe tu nombre"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            name="sender-email" 
+                            id="email"
+                            placeholder="Ingrese su email"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="mensaje">Déjame un mensaje</label>
+                        <textarea
+                            name="mensaje" 
+                            id="mensaje" 
+                            cols="60" 
+                            rows="10"
+                            placeholder="Escriba su mensaje"
+                            class="input-field"
+                            required>
+                        </textarea>
+                    </div>
                     <input 
-                        type="text" 
-                        name="sender-name" 
-                        id="name"
-                        placeholder="Escribe tu nombre"
-                        class="input-field"
-                        required
-                    />
-                </div>
-                <div class="control-formulario">
-                    <label for="email">Email</label>
-                    <input 
-                        type="email" 
-                        name="sender-email" 
-                        id="email"
-                        placeholder="Ingrese su email"
-                        class="input-field"
-                        required
-                    />
-                </div>
-                <div class="control-formulario">
-                    <label for="mensaje">Déjame un mensaje</label>
-                    <textarea 
-                        name="mensaje" 
-                        id="mensaje" 
-                        cols="60" 
-                        rows="10"
-                        placeholder="Escriba su mensaje"
-                        class="input-field"
-                        required>
-                    </textarea>
-                </div>
-                <input 
-                    type="submit"
-                    value="Enviar"
-                    id="submit-btn"
-                    class="submit-btn">
-            </div>
+                        type="submit"
+                        value="submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                    />                    
+                </form>
+            </div>               
         </div>
     </section>
     <!-- Sección de redes sociales - Fijado a la derecha -->

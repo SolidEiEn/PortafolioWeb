@@ -196,8 +196,8 @@ nav img {
 }
 
 .icon {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 8rem;
+    height: 8rem;
 }
 .icon-card {
     background-color: #fff;
@@ -214,15 +214,15 @@ nav img {
 }
 
 .project-pic {
-    width: 65%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor-de-proyectos {
-    display: flexbox;    
+    display: flex;         
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: center;    
+}
 
 .titulo-proyectos {
     text-align: center;
@@ -231,12 +231,13 @@ nav img {
 
 .contenedor-de-proyectos {
     text-align: center;
-    width: 98%;
+    width: 100%;
     padding: 1rem;
+    
 }
 
 .contenedor-de-proyectos p {
-    padding: 0.4rem;
+    padding: 0.4rem;   
 }
 
 .titulo-proyectos {
@@ -251,8 +252,9 @@ nav img {
     /* background-color: #fff; */
     border-radius: 11px;
     box-shadow: 0px 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px;
+    flex-direction: column;
 }
 
 .contacto {
